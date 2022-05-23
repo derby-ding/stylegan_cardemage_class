@@ -1,0 +1,5 @@
+####cp -r ../datasets/augcls4/train ../datasets/mixcls4/train
+python style_mixing.py --outdir=../datasets/mixcls4/train/00 --rows=0-100 --cols=469-569 --network=runs/car/00016-lit4gan128-cond-mirror-cifar-kimg15000-batch128-bgcfnc/network-010000.pkl;
+python style_mixing.py --outdir=../datasets/mixcls4/train/01 --rows=175-275 --cols=350-450 --network=runs/car/00016-lit4gan128-cond-mirror-cifar-kimg15000-batch128-bgcfnc/network-010000.pkl;
+python style_mixing.py --outdir=../datasets/mixcls4/train/02 --rows=292-392 --cols=191-291 --network=runs/car/00016-lit4gan128-cond-mirror-cifar-kimg15000-batch128-bgcfnc/network-010000.pkl;
+python style_mixing.py --outdir=../datasets/mixcls4/train/03 --rows=451-551 --cols=74-174 --network=runs/car/00016-lit4gan128-cond-mirror-cifar-kimg15000-batch128-bgcfnc/network-010000.pkl
